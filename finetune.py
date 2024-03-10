@@ -39,8 +39,8 @@ parser.add_argument("--learning_rate", type=float, default=1e-4, help='Learning 
 parser.add_argument("--grad_acc", type=int, default=60, help='Number of gradient accumulation.')
 parser.add_argument("--valid_every", type=int, default=1, help='Number of training epochs between twice validation.')
 parser.add_argument("--pos_embed", type=bool, default=True, help='Using Gene2vec encoding or not.')
-parser.add_argument("--data_path", type=str, default='./data/Zheng68K.h5ad', help='Path of data for finetune.')
-parser.add_argument("--model_path", type=str, default='./panglao_pretrained.pth', help='Path of pretrained model.')
+parser.add_argument("--data_path", type=str, default='./SCBERT_data/Zheng68K.h5ad', help='Path of data for finetune.')
+parser.add_argument("--model_path", type=str, default='.SCBERT_data/panglao_pretrained.pth', help='Path of pretrained model.')
 parser.add_argument("--ckpt_dir", type=str, default='./ckpts/', help='Directory of checkpoint to save.')
 parser.add_argument("--model_name", type=str, default='finetune', help='Finetuned model name.')
 
